@@ -21,10 +21,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private boolean win;
     private boolean lose;
+    private boolean isShown;
 
     private TextView arrowCount;
     private TextView winLose;
     private TextView shoot;
+
+    private TextView winCounter;
+    private TextView loseCounter;
+
+    private int winCount;
+    private int loseCount;
+
     private ImageButtonExtra[][] buttons = new ImageButtonExtra[x][y];
 
     private ImageButton arrow_up;
@@ -33,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private ImageButton arrow_left;
 
     private Button reset_button;
+    private Button show_tiles;
 
 
     @Override
@@ -46,6 +55,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         arrow_left = findViewById(R.id.left_arrow);
         shoot = findViewById(R.id.shoot_arrow);
         reset_button = findViewById(R.id.reset);
+        show_tiles = findViewById(R.id.show_tiles);
+
+        winCounter = findViewById(R.id.win_counter);
+        loseCounter = findViewById(R.id.lose_counter);
+
+        winCount = 0;
+        loseCount = 0;
+
+        isShown = false;
 
         mainCave = new Cave(x, y);
         winLose = findViewById(R.id.win_lose);
@@ -67,6 +85,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onClick(View v) {
                 resetLevel();
+            }
+        });
+
+        show_tiles.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showTiles();
             }
         });
 
@@ -167,12 +192,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void ifWin() {
         winLose.setText("You Win!");
         winLose.setVisibility(View.VISIBLE);
+        show_tiles.setVisibility(View.VISIBLE);
+        winCount++;
+        winCounter.setText("Wins: " + winCount);
         blankOut();
     }
 
     private void ifLose(){
         winLose.setText("You Lose!");
         winLose.setVisibility(View.VISIBLE);
+        show_tiles.setVisibility(View.VISIBLE);
+        loseCount++;
+        loseCounter.setText("Losses: " + loseCount);
         blankOut();
     }
 
@@ -193,6 +224,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         arrow_right.setVisibility(View.VISIBLE);
         shoot.setVisibility(View.VISIBLE);
         winLose.setVisibility(View.INVISIBLE);
+        show_tiles.setVisibility(View.INVISIBLE);
     }
 
     private void resetLevel(){
@@ -205,10 +237,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             mainCave.setArrowIsShot(false);
         }
         arrowCount.setText("Arrows: 1");
+        isShown = false;
     }
 
     private void clearWumpus(){
         mainCave.clearWumpus();
+        mainCave.draw(buttons);
+    }
+
+    private void showTiles(){
+        if(!isShown){
+            mainCave.setAllVisited(true);
+        }
+        isShown = true;
         mainCave.draw(buttons);
     }
 }

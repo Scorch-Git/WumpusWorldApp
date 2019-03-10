@@ -26,15 +26,45 @@
             android:textColor="@color/textColor"
             tools:visibility="visible" />
 
+        <TextView
+            android:id="@+id/win_counter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/win_counter"
+            android:textSize="15sp"
+            android:textColor="@color/textColor"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/lose_counter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/lose_counter"
+            android:textSize="15sp"
+            android:textColor="@color/textColor"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            tools:visibility="visible" />
+
 
         <TextView
             android:id="@+id/arrow_count"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/arrow_count"
-            android:textSize="30sp"
+            android:textSize="15sp"
             android:textColor="@color/textColor"
-            android:freezesText="true"/>
+            android:freezesText="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="35dp"/>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -92,6 +122,15 @@
                 android:layout_height="wrap_content"
                 android:text="@string/reset_button"
                 android:layout_alignParentBottom="true" />
+
+            <Button
+                android:id="@+id/show_tiles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/show_tiles"
+                android:visibility="invisible" />
 
         </RelativeLayout>
 

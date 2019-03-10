@@ -8,4 +8,9 @@
     <string name="shoot_arrow">Shoot Arrow</string>
 
     <string name="reset_button">Reset</string>
+
+    <string name="show_tiles">Show Tiles</string>
+
+    <string name="win_counter">Wins: </string>
+    <string name="lose_counter">Losses: </string>
 </resources>

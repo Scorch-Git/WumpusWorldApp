@@ -222,7 +222,14 @@ public class Cave {
         int posiX = (int) ((Math.random() * 3));
         int posiY = (int) ((Math.random() * 3) + 1);
 
-        mainRoom[posiX][posiY].setGold(true);
+        if(mainRoom[posiX][posiY].getHole() == false){
+            mainRoom[posiX][posiY].setGold(true);
+        }
+        else{
+            setGold();
+        }
+
+
     }
 
     private void setWindy(){
@@ -310,6 +317,14 @@ public class Cave {
             for (int y = 0; y < height; y++) {
                 mainRoom[i][y].setStinky(false);
                 mainRoom[i][y].setWumpus(false);
+            }
+        }
+    }
+
+    public void setAllVisited(Boolean variable){
+        for (int i = 0; i < width; i++) {
+            for (int y = 0; y < height; y++) {
+                mainRoom[i][y].setVisited(variable);
             }
         }
     }
