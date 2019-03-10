@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Wumpus World</string>
+
+    <string name="arrow_count">Arrows: 1</string>
+
+    <string name="win_lose"></string>
+
+    <string name="shoot_arrow">Shoot Arrow</string>
+
+    <string name="reset_button">Reset</string>
+</resources>

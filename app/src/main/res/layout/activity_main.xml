@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="185sp"
+        android:background="@color/background"
+        >
+
+        <TextView
+            android:id="@+id/win_lose"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/win_lose"
+            android:textSize="50sp"
+            android:visibility="invisible"
+            android:textColor="@color/textColor"
+            tools:visibility="visible" />
+
+
+        <TextView
+            android:id="@+id/arrow_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/arrow_count"
+            android:textSize="30sp"
+            android:textColor="@color/textColor"
+            android:freezesText="true"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/up_arrow"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_marginRight="60dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_keyboard_arrow_up_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/down_arrow"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="60dp"
+                android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/right_arrow"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/left_arrow"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="105dp"
+                android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+            <TextView
+                android:id="@+id/shoot_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shoot_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="110dp"
+                android:layout_marginRight="30dp"
+                android:textSize="20sp"
+                android:textColor="@color/textColor"
+                android:freezesText="true"/>
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reset_button"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.scorchgames.wumpusworldapp.ImageButtonExtra
+            android:id="@+id/button_00"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"/>
+
+        <com.scorchgames.wumpusworldapp.ImageButtonExtra
+            android:id="@+id/button_01"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"/>
+
+        <com.scorchgames.wumpusworldapp.ImageButtonExtra
+            android:id="@+id/button_02"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"/>
+
+        <com.scorchgames.wumpusworldapp.ImageButtonExtra
+            android:id="@+id/button_03"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"/>
+
+        <com.scorchgames.wumpusworldapp.ImageButtonExtra
+            android:id="@+id/button_04"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.scorchgames.wumpusworldapp.ImageButtonExtra
+            android:id="@+id/button_10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"/>
+
+        <com.scorchgames.wumpusworldapp.ImageButtonExtra
+            android:id="@+id/button_11"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"/>
+
+        <com.scorchgames.wumpusworldapp.ImageButtonExtra
+            android:id="@+id/button_12"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"/>
+
+        <com.scorchgames.wumpusworldapp.ImageButtonExtra
+            android:id="@+id/button_13"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"/>
+
+        <com.scorchgames.wumpusworldapp.ImageButtonExtra
+            android:id="@+id/button_14"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.scorchgames.wumpusworldapp.ImageButtonExtra
+            android:id="@+id/button_20"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"/>
+
+        <com.scorchgames.wumpusworldapp.ImageButtonExtra
+            android:id="@+id/button_21"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"/>
+
+        <com.scorchgames.wumpusworldapp.ImageButtonExtra
+            android:id="@+id/button_22"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"/>
+
+        <com.scorchgames.wumpusworldapp.ImageButtonExtra
+            android:id="@+id/button_23"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"/>
+
+        <com.scorchgames.wumpusworldapp.ImageButtonExtra
+            android:id="@+id/button_24"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.scorchgames.wumpusworldapp.ImageButtonExtra
+            android:id="@+id/button_30"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"/>
+
+        <com.scorchgames.wumpusworldapp.ImageButtonExtra
+            android:id="@+id/button_31"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"/>
+
+        <com.scorchgames.wumpusworldapp.ImageButtonExtra
+            android:id="@+id/button_32"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"/>
+
+        <com.scorchgames.wumpusworldapp.ImageButtonExtra
+            android:id="@+id/button_33"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"/>
+
+        <com.scorchgames.wumpusworldapp.ImageButtonExtra
+            android:id="@+id/button_34"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.scorchgames.wumpusworldapp.ImageButtonExtra
+            android:id="@+id/button_40"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"/>
+
+        <com.scorchgames.wumpusworldapp.ImageButtonExtra
+            android:id="@+id/button_41"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"/>
+
+        <com.scorchgames.wumpusworldapp.ImageButtonExtra
+            android:id="@+id/button_42"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"/>
+
+        <com.scorchgames.wumpusworldapp.ImageButtonExtra
+            android:id="@+id/button_43"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"/>
+
+        <com.scorchgames.wumpusworldapp.ImageButtonExtra
+            android:id="@+id/button_44"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
