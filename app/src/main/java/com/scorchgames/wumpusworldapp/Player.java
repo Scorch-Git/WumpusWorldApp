@@ -1,24 +1,36 @@
 package com.scorchgames.wumpusworldapp;
 
+/**
+ * Nicholas Prussen
+ * (Code credits to Chase Farrar)
+ * This is the constructor for the player in the game
+ */
 public class Player {
 
     private boolean isArrowShot;
-    private boolean isPlayerAlive;
     private int playerX;
     private int playerY;
 
+    /**
+     * Constructor for Player
+     * Initialize variables
+     */
     public Player() {
         playerX = 4;
         playerY = 0;
-        isPlayerAlive = true;
         isArrowShot = false;
     }
 
-    public Player(boolean isArrowShot, int playerX, int playerY, boolean isPlayerAlive) {
+    /**
+     * Also constructor
+     * @param isArrowShot
+     * @param playerX
+     * @param playerY
+     */
+    public Player(boolean isArrowShot, int playerX, int playerY) {
         this.isArrowShot = isArrowShot;
         this.playerX = playerX;
         this.playerY = playerY;
-        this.isPlayerAlive = isPlayerAlive;
     }
 
     public boolean getIsArrowShot() {
@@ -33,10 +45,6 @@ public class Player {
         return playerY;
     }
 
-    public boolean getIsPlayerAlive() {
-        return isPlayerAlive;
-    }
-
     public void setIsArrowShot(boolean istrue) {
         isArrowShot = istrue;
     }
@@ -47,9 +55,5 @@ public class Player {
 
     public void setPlayerY(int newPlayerY) {
         playerY = newPlayerY;
-    }
-
-    public void setIsPlayerAlive(boolean istrue) {
-        isPlayerAlive = istrue;
     }
 }

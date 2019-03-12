@@ -2,15 +2,17 @@
     <string name="app_name">Wumpus World</string>
 
     <string name="arrow_count">Arrows: 1</string>
-
     <string name="win_lose"></string>
-
     <string name="shoot_arrow">Shoot Arrow</string>
 
-    <string name="reset_button">Reset</string>
 
+    <string name="reset_button">Reset</string>
+    <string name="credit_button">Credits</string>
     <string name="show_tiles">Show Tiles</string>
 
     <string name="win_counter">Wins: </string>
     <string name="lose_counter">Losses: </string>
+
+    <string name="asset_cred">Assets: Zachariah Valenzuela</string>
+    <string name="code_cred">Code: Nicholas Prussen</string>
 </resources>

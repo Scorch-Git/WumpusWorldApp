@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,8 +11,7 @@
         android:id="@+id/top_layout"
         android:layout_width="match_parent"
         android:layout_height="185sp"
-        android:background="@color/background"
-        >
+        android:background="@color/background">
 
         <TextView
             android:id="@+id/win_lose"
@@ -21,35 +19,58 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="@string/win_lose"
+            android:textColor="@color/textColor"
             android:textSize="50sp"
             android:visibility="invisible"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/code_cred"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/code_cred"
             android:textColor="@color/textColor"
+            android:textSize="20sp"
+            android:visibility="invisible"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/asset_cred"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="105dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/asset_cred"
+            android:textColor="@color/textColor"
+            android:textSize="20sp"
+            android:visibility="invisible"
             tools:visibility="visible" />
 
         <TextView
             android:id="@+id/win_counter"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/win_counter"
-            android:textSize="15sp"
-            android:textColor="@color/textColor"
-            android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
+            android:text="@string/win_counter"
+            android:textColor="@color/textColor"
+            android:textSize="15sp"
             tools:visibility="visible" />
 
         <TextView
             android:id="@+id/lose_counter"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/lose_counter"
-            android:textSize="15sp"
-            android:textColor="@color/textColor"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="20dp"
             android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/lose_counter"
+            android:textColor="@color/textColor"
+            android:textSize="15sp"
             tools:visibility="visible" />
 
 
@@ -57,14 +78,15 @@
             android:id="@+id/arrow_count"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/arrow_count"
-            android:textSize="15sp"
-            android:textColor="@color/textColor"
-            android:freezesText="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
             android:layout_marginRight="50dp"
-            android:layout_marginBottom="35dp"/>
+            android:layout_marginBottom="35dp"
+            android:freezesText="true"
+            android:text="@string/arrow_count"
+            android:textColor="@color/textColor"
+            android:textSize="15sp" />
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -73,8 +95,8 @@
                 android:id="@+id/up_arrow"
                 android:layout_width="50sp"
                 android:layout_height="50sp"
-                android:layout_marginRight="60dp"
                 android:layout_alignParentRight="true"
+                android:layout_marginRight="60dp"
                 android:src="@drawable/ic_keyboard_arrow_up_black_24dp" />
 
             <ImageButton
@@ -108,32 +130,39 @@
                 android:id="@+id/shoot_arrow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/shoot_arrow"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="110dp"
                 android:layout_marginRight="30dp"
-                android:textSize="20sp"
+                android:freezesText="true"
+                android:text="@string/shoot_arrow"
                 android:textColor="@color/textColor"
-                android:freezesText="true"/>
+                android:textSize="20sp" />
 
             <Button
                 android:id="@+id/reset"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/reset_button"
-                android:layout_alignParentBottom="true" />
+                android:layout_alignParentBottom="true"
+                android:text="@string/reset_button" />
+
+            <Button
+                android:id="@+id/credits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="90dp"
+                android:text="@string/credit_button" />
 
             <Button
                 android:id="@+id/show_tiles"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
                 android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
                 android:text="@string/show_tiles"
                 android:visibility="invisible" />
 
         </RelativeLayout>
-
 
 
     </RelativeLayout>

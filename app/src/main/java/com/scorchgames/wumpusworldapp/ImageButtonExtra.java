@@ -3,6 +3,9 @@ package com.scorchgames.wumpusworldapp;
 import android.content.Context;
 import android.util.AttributeSet;
 
+/**
+ * This was created to enable x/y tracking of ImageButtons in a double array
+ */
 public class ImageButtonExtra extends android.support.v7.widget.AppCompatImageButton {
 
     private int mainX;
@@ -15,12 +18,10 @@ public class ImageButtonExtra extends android.support.v7.widget.AppCompatImageBu
     }
     public ImageButtonExtra(Context context, AttributeSet attrs) {
         super(context, attrs);
-        // TODO Auto-generated constructor stub
     }
 
     public ImageButtonExtra(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-        // TODO Auto-generated constructor stub
     }
 
     public void setX(int x){

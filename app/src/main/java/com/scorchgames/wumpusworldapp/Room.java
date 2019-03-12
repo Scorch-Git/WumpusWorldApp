@@ -19,6 +19,9 @@ public class Room {
     private boolean  visited;
     private boolean isTrue = true;
 
+    /**
+     * Main Constructor for Room
+     */
     public Room(){
         hero = false;
         gold = false;
@@ -30,6 +33,16 @@ public class Room {
 
     }
 
+    /**
+     * Seconday constructor
+     * @param hero
+     * @param gold
+     * @param wumpus
+     * @param windy
+     * @param hole
+     * @param stinky
+     * @param visited
+     */
     public Room(boolean hero, boolean gold, boolean wumpus, boolean windy, boolean hole, boolean stinky, boolean visited) {
         this.visited = visited;
         this.hole = hole;
