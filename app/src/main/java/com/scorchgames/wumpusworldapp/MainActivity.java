@@ -245,19 +245,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             mainCave.draw(buttons);
             if(mainCave.checkWin()){
                 win = true;
+                ifWin();
             }
             else if(mainCave.checkLose()){
                 lose = true;
+                ifLose();
             }
         }
 
         //Second check for win
-        if(win){
-            ifWin();
-        }
-        else if(lose){
-            ifLose();
-        }
+        //if(win){
+          //  ifWin();
+        //}
+        //else if(lose){
+        //    ifLose();
+        //}
 
 
 
